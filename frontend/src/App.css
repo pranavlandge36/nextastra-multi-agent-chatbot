@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #111827;
+  color: white;
+  padding: 20px 40px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header p {
+  margin: 6px 0 0;
+  color: #cbd5e1;
+}
+
+.chat-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  min-height: 75vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.messages {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 120px;
+  color: #64748b;
+}
+
+.welcome h2 {
+  color: #111827;
+}
+
+.message {
+  margin-bottom: 22px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.message.user {
+  background: #eef2ff;
+}
+
+.message.assistant {
+  background: #f8fafc;
+}
+
+.message-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.message pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
+}
+
+.input-area {
+  border-top: 1px solid #e5e7eb;
+  padding: 15px;
+}
+
+.selected-file {
+  background: #f1f5f9;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.selected-file button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.upload-button {
+  width: 50px;
+  height: 45px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.upload-button input {
+  display: none;
+}
+
+.input-row input[type="text"] {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-row input[type="text"]:focus {
+  border-color: #6366f1;
+}
+
+.send-button {
+  width: 80px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.send-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+}
+
+.download-button:hover {
+  opacity: 0.9;
+}
